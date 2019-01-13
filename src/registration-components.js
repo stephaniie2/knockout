@@ -9,6 +9,8 @@ import PersonComponent from './components/person/person';
 
 // Page components
 import HomeComponents from './page-components/home/home';
+import NavbarComponents from './page-components/navbar/navbar';
+
 
 
 class ComponentRegistration {
@@ -23,10 +25,13 @@ class ComponentRegistration {
     ko.components.register('file-list', FileListComponent);
     ko.components.register('github-repos', GithubReposComponent);
     ko.components.register('inv-person', PersonComponent);
+    
   }
 
   static registerPageComponents() {
     ko.components.register('home', HomeComponents);
+    ko.components.register('navbar', NavbarComponents);
+    
   }
 
 }
